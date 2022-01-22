@@ -105,9 +105,16 @@ modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 });
 
-const cards = document.querySelectorAll(".card");
-console.log(cards);
-
-search.addEventListener('search', ()=>{
-
-});
+search.addEventListener('keyup', ()=>{
+    const cards = document.querySelectorAll(".card");
+    console.log(cards);
+    cards.forEach((card) => {
+        let texto = card.querySelector("h2").innerHTML.toLowerCase();
+        if(texto.includes(search.value.toLowerCase())){
+                card.style.display = '';
+            }
+            else {
+                card.style.display = "none";
+            }
+        });
+    });
