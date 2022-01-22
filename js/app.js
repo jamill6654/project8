@@ -105,7 +105,7 @@ modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 });
 
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".name");
 console.log(cards);
 
 search.addEventListener('search', ()=>{
