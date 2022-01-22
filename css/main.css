@@ -1,0 +1,177 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spline Sans', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  position: relative;
+}
+
+p {
+  color: grey;
+  line-height: 65%;
+}
+
+h2 {
+  line-height: 65%;
+}
+
+/***********HEADER**************/
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  font-size: 18px;
+  margin: 20px;
+  margin-left: 5%;
+}
+
+.search-field {
+  width: 30vw;
+  height: 2vw;
+  margin-left: 10px;
+}
+
+/***********MAIN GRID***********/
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  margin: auto;
+  width: 99vw;
+  height: 90vh;
+  grid-gap: 10px;
+}
+
+/***********CARDS***********/
+img {
+  border-radius: 50%;
+  width: 8vw;
+  margin-left: 2%;
+}
+
+.grid-container p {
+  font-size: 1vw;
+}
+
+.grid-container h2 {
+  font-size: 1.5vw;
+}
+
+.text-container {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.card {
+  border: solid lightgrey 1px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+/***********MODAL-OVERLAY***********/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal p {
+  font-size: 1.5vw;
+}
+
+.modal h2 {
+  font-size: 2vw;
+}
+
+.modal .text-container {
+  text-align: center;
+}
+
+hr {
+  margin: 30px;
+}
+
+.modal {
+  width: 40vw;
+  height: 75vh;
+  margin: 5% auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal img {
+  margin: auto;
+  width: 12vw;
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.previous, .next {
+  display: inline-block;
+  font-size: 3vw;
+  color: blue;
+  margin-top: 0;
+}
+
+.previous:hover, .next:hover {
+  cursor: pointer;
+}
+
+.next {
+  margin-left: 10vw;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
